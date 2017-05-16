@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<title>常用的其他标签</title>
+	</head>
+	<body>
+		<!-- dl标签是用来做数据列表显示的 注释标签，注释标签不会在网页中被显示，仅仅用来对代码进行标注 -->
+
+		<!--pre标签中的信息会按照代码的方式完整的显示-->
+		<pre><!--用于显示计算机代码 --->
+		for(int i=0;i==10;i++) {
+			printf(%d,i);
+		}
+		</pre>
+		<!--&lt;表示小于符号，&gt;表示大于符号-->
+		i&lt;10 i&gt;15<br/>
+		<!--&nbsp;用来在页面中显示空格-->
+		师父&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我来了<Br/>
+		&copy;<!-- copy的符号--> &amp;<!-- &符号使用&amp;来显示--> 
+		<dl>
+			<dt>质检动态</dt>
+			<dd>关于xxxxx的文章</dd>
+			<dd>关于ddddd 的文章</dd>
+		</dl>
+		<!--所有的标签除了内容之外还有自己的属性，属性全部在开始的标签中来写-->
+		<a href="01.html" target="content" title="这个是我的超级链接标签">这是一个超链接</a>
+		<marquee direction="leftw" scrollamount="3" onmouseover="this.stop()" onmouseout="this.start()"> <!--属性：方西   速度  -->
+			<ul>
+				<li>第一</li>
+				<li>第二</li>
+			</ul>
+		</marquee>
+		<img src="1.jpg" width="300" height="300" alt="三八国际劳动节" title="搞笑图片"/><!--注意文件路径的查找 -->
+		<marquee>
+			<a href="02.html"><img src="2.jpg"/></a>
+		</marquee>
+	</body>
+</html>

@@ -1,0 +1,76 @@
+<html>
+	<head>
+		<title>盒子模型测试</title>
+		<style type="text/css">
+		/*
+		   *号表示所有的标签
+		*/
+		* {
+			padding:0px;
+			margin:0px;
+		}
+		#parent {
+			border:1px solid red;
+			width:500px;
+			height:300px;
+			/*padding-left:70px;*/
+			margin:0px;
+		}
+		#child {
+			border:1px solid blue;
+			width:150px;
+			height:150px;
+			padding:20px;
+			padding-left:90px;
+			/*设置4个值表示从top位置顺时针转
+				top:12,right:10,bottom:20,left:50px
+			*/
+			padding:12px 10px 20px 50px;
+			margin-top:70px;
+			margin-left:90px;
+		}
+		
+		#star {
+			margin-top:10px;
+		}
+		#star span {
+			border:1px solid #999;
+			width:200px;
+			height:50px;
+			display:block;
+			text-align:center;
+			padding-top:25px;
+		}
+
+		#rock_star {
+			padding:30px;
+			list-style:none;
+		}
+		#rock_star li {
+			border:1px solid red;
+			width:130px;
+			height:40px;
+			text-align:center;
+		}
+		</style>
+	</head>
+	<body>
+		<div id="parent">
+			<div id="child">hello box model</div>
+		</div>
+		<ul id="rock_star">
+			<li>窦唯</li>
+			<li>张楚</li>
+			<li>何勇</li>
+			<li>周云蓬</li>
+		</ul>
+
+		<div id="star">
+			<span>刘德华</span>
+			<span>张学友</span>
+			<span>郭富城</span>
+			<span>黎明</span>
+		</div>
+
+	</body>
+</html>

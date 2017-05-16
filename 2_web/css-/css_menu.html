@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>css_menu</title>
+	<meta name="author" content="Administrator" />
+	<!-- Date: 2012-12-09 -->
+	<style type="text/css">
+		*{
+			padding: 0px;
+			margin: 0px;
+			font-size:12px;
+		}
+		#menu_bar {
+			position: absolute;
+			left:50px;
+			top:50px;
+		}
+		dl.menu {
+			float:left;
+			width:120px;
+		}
+		dl.menu dt,dl.menu dd {
+			height:30px;
+			background: #339;
+			color:#fff;
+			border-right:#ffffff 1px solid;
+			text-align: center;
+		}
+		dl.menu dt span {
+			position: relative;
+			top:6px;
+		}
+		dl.menu dd {
+			background: #911;
+			color:#fff;
+			border-bottom:#ffffff 1px solid;
+			display: none;
+		}
+		dl.menu dd a {
+			position: relative;
+			top:6px;
+		}
+		a.menu_href:link,a.menu_href:visited {
+			text-decoration: none;
+			color:#fff;
+		}
+		dl.menu dd:hover {
+			background:#393;
+			cursor:pointer;
+		}
+	</style>
+</head>
+<body>
+	<div id="menu_bar">
+		<dl class="menu">
+			<dt><span>文件管理</span></dt>
+			<dd><a href="#" class="menu_href">打开文件</a></dd>
+			<dd><a href="#" class="menu_href">删除文件</a></dd>
+			<dd><a href="#" class="menu_href">存储文件</a></dd>
+			<dd><a href="#" class="menu_href">关闭文件</a></dd>
+			<dd><a href="#" class="menu_href">退出</a></dd>
+		</dl>
+		<dl class="menu">
+			<dt><span>编辑</span></dt>
+			<dd><a href="#" class="menu_href">重复操作</a></dd>
+			<dd><a href="#" class="menu_href">撤销操作</a></dd>
+			<dd><a href="#" class="menu_href">拷贝</a></dd>
+			<dd><a href="#" class="menu_href">粘贴</a></dd>
+		</dl>		
+		<dl class="menu">
+			<dt><span>视图</span></dt>
+			<dd><a href="#" class="menu_href">打印视图</a></dd>
+			<dd><a href="#" class="menu_href">浏览视图</a></dd>
+			<dd><a href="#" class="menu_href">开发视图</a></dd>
+		</dl>		
+		<dl class="menu">
+			<dt><span>窗口</span></dt>
+			<dd><a href="#" class="menu_href">上一个</a></dd>
+			<dd><a href="#" class="menu_href">下一个</a></dd>
+			<dd><a href="#" class="menu_href">显示</a></dd>
+		</dl>				
+	</div>
+</body>
+</html>
+

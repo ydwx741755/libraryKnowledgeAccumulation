@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<title>外部链接CSS文件</title>
+		<style type="text/css">
+		/*默认情况的超链接*/
+			a.xyj:link,a.xyj:visited {
+				text-decoration:none;
+				font-size:12px;
+				color:#226;
+			}
+		/*当链接点击之后的效果，对于IE而言，不会自动继承a:link的效果，所以
+		  为了满足IE的浏览器的效果，最好在a:link,a:visited
+		  */
+			a.xyj:visited {
+				color:#a21;
+			}
+		/*
+			当鼠标移动到上面之后的样式
+		*/
+			a.xyj:hover {
+				color:#191;
+				text-decoration:underline;
+			}
+			
+			a.rock:link,a.rock:visited {
+				background:#f00;
+				padding:4px;
+				font-size:12px;
+				text-decoration:none;
+				color:#fff;
+			}
+
+			a.rock:hover {
+				background:#549;
+				color:#ff0;
+			}
+
+		</style>
+	</head>
+	<body>
+		<a href="#" class="xyj">孙悟空</a>
+		<a href="#" class="xyj">猪八戒</a>
+		<a href="#" class="xyj">沙僧</a>
+		<a href="#" class="xyj">唐僧</a>
+
+		<a href="" class="rock">刘东明</a>
+		<a href="" class="rock">周云蓬</a>
+		<a href="" class="rock">张玮玮</a>
+		<a href="" class="rock">郭珑</a>
+	</body>
+</html>

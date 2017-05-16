@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>第一个CSS文件</title>
+		<style type="text/css">
+		/*h2表示对页面中的所有的h2的标签都有效*/
+			h2{
+				background:#aa1222;
+				color:#fff;
+			}
+		</style>
+		<!--此时如果在css02中有相应的h2的设置，并且和style中的有冲突会被覆盖-->
+		<link rel="stylesheet" href="css02.css" type="text/css"/>
+	</head>
+
+	<body>
+		<!--style属性来设置样式，这个样式是嵌套在标签中,称为内嵌样式，内嵌样式仅仅只是对当前标签有效，内嵌标签中的元素会把在style中的样式替换掉-->
+		<h2 style="color:#212267;text-decoration:underline;font-size:12px">这是我的第一个CSS文件</h2>
+		<h2>
+			这是另一个h2
+		</h2>
+		<h2>
+			这是第三个h2
+		</h2>
+	</body>
+</html>

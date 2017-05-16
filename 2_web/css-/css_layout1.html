@@ -1,0 +1,247 @@
+<html>
+	<head>
+		<title>外部链接CSS文件</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<style type="text/css">
+			*{
+				padding:0px;
+				margin:0px;
+				font-size:12px;
+			}/*
+			仅仅只有IE可以居中
+			body {
+				text-align:center;
+			}*/
+			#container {
+				width:1100px;
+				
+				/*仅仅只有IE之外的浏览器可以居中
+				margin:auto;
+				*/
+				/*以下三个操作才是推荐使用的居中方式*/
+				position:absolute;
+				left:50%;
+				margin-left:-550px;
+			}
+			#header {
+				height:50px;
+				background:#33F;
+				
+			}
+			#nav {
+				border-bottom:1px solid #88A;
+				height:30px;
+				border:1px solid #229;
+			}
+			#nav ul {
+				list-style:none;
+			}
+			li.nav_li {
+				float:left;
+				width:100px;
+				font-size:12px;
+				color:#621;
+				text-align:center;
+				border-right:1px solid #339;
+				height:30px;
+			}
+			/*当使用了包含的操作符之后，
+			它的加载时间比使用class的加载时间要低，所以如果此时
+			再来定义一个class的样式，不会把使用包含的样式覆盖掉*/
+			#nav ul li a {
+				position:relative;
+				top:8px;
+				/*此时如果设置了该颜色的之后，nav中的a的所有的颜色都是f00
+				color:#f00;
+				*/
+			}
+			li.nav_last {
+				border:none;
+			}
+			a.nav_href:link,a.nav_href:visited {
+				text-decoration:none;
+				color:#125;
+			}
+			a.nav_href:hover {
+				text-decoration:underline;
+				color:#a43;
+			}
+			#content {
+				/*将两端的float清除，否则对于IE以外的浏览器而言，
+				设置了float的元素会不再占用空间，下面的元素会飘上去*/
+				clear:both;
+				float:left;
+				margin-top:4px;
+			}
+/*************************主页内容中的文章列表样式*******************************/
+			dl.article_list {
+				border:1px solid #999;
+				margin-top:4px;
+			}
+			dl.article_list dt {
+				height:30px;
+				background:#228;
+				color:#ff0;
+				font-weight:bold;
+				
+			}
+			dl.article_list dt span {
+				position:relative;
+				font-size:14px;
+				top:5px;
+				left:5px;
+			}
+			dl.article_list dd {
+				height:30px;
+				background:url("point.jpg") no-repeat;
+				background-position:12px 12px;
+				border-bottom:1px dotted #aaa;
+			}
+			dl.article_list dd a {
+				position:relative;
+				left:25px;
+				top:8px;
+			}
+
+			a.article_href:link,a.article_href:visited {
+				text-decoration:none;
+				color:#555;
+			}
+			a.article_href:hover {
+				text-decoration:underline;
+				color:#a33;
+			}
+
+			#con_left {
+				float:left;
+				width:250px;
+			}
+
+			#con_right{
+				float:left;
+				width:845px;
+			}
+
+			dl.index_l_article {
+				width:240px;
+			}
+
+			dl.index_r_article {
+				float:left;
+				width:393px;
+				margin-left:20px;
+				*margin-left:10px;
+			}
+
+			#bottom {
+				height:30px;
+				width:1100px;
+				border-top:1px solid #999;
+				float:left;
+				margin-top:10px;
+				clear:both;
+				text-align:center;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<div id="header">导航图片</div>
+			<div id="nav">
+				<ul>
+					<li class="nav_li"><a href="#" class="nav_href">返回首页</a></li>
+					<li class="nav_li"><a href="#" class="nav_href">摇滚音乐</a></li>
+					<li class="nav_li"><a href="#" class="nav_href">另类电影</a></li>
+					<li class="nav_li"><a href="#" class="nav_href">联系我们</a></li>
+					<li class="nav_li"><a href="#" class="nav_href">网站导航</a></li>
+					<li class="nav_li"><a href="#" class="nav_href">网站帮助</a></li>
+					<li class="nav_li"><a href="#" class="nav_href">网站导航</a></li>
+					<li class="nav_li"><a href="#" class="nav_href">网站帮助</a></li>
+					<li class="nav_li"><a href="#" class="nav_href">网站导航</a></li>
+					<!--一个css中可以加载多个类，用空格来隔开-->
+					<li class="nav_li nav_last">
+					<a href="#" class="nav_href">网站帮助</a>
+					</li>
+				</ul>
+			</div>
+			<div id="content">
+				<div id="con_left">
+					<dl class="article_list index_l_article">
+						<dt><span>通知信息</span></dt>
+						<dd><a href="#" class="article_href">关于西游记的通知信息坎坎坷</a></dd>
+						<dd><a href="#" class="article_href">关于西游记的通知信息</a></dd>
+						<dd><a href="#" class="article_href">关于西游记的通知信息</a></dd>
+						<dd><a href="#" class="article_href">关于西游记的通知信息</a></dd>
+						<dd><a href="#" class="article_href">关于西游记的通知信息</a></dd>
+						<dd><a href="#" class="article_href">关于西游记的通知信息</a></dd>
+						<dd><a href="#" class="article_href">关于西游记的通知信息</a></dd>
+					</dl>
+
+					<dl class="article_list index_l_article">
+						<dt><span>意见建议</span></dt>
+						<dd><a href="#" class="article_href">关于西游记的通知信息坎坎坷</a></dd>
+						<dd><a href="#" class="article_href">关于西游记的通知信息</a></dd>
+						<dd><a href="#" class="article_href">关于西游记的通知信息</a></dd>
+						
+					</dl>
+
+					<dl class="article_list index_l_article">
+						<dt><span>交流互动</span></dt>
+						<dd><a href="#" class="article_href">关于西游记的通知信息坎坎坷</a></dd>
+						<dd><a href="#" class="article_href">关于西游记的通知信息</a></dd>
+						<dd><a href="#" class="article_href">关于西游记的通知信息</a></dd>
+						<dd><a href="#" class="article_href">关于西游记的通知信息</a></dd>
+					
+					</dl>
+				</div>
+				<div id="con_right">
+					<dl class="article_list index_r_article">
+						<dt><span>通知信息</span></dt>
+						<dd><a href="#" class="article_href">关于西游记的通知信息坎坎坷</a></dd>
+						<dd><a href="#" class="article_href">关于西游记的通知信息</a></dd>
+						<dd><a href="#" class="article_href">关于西游记的通知信息</a></dd>
+						<dd><a href="#" class="article_href">关于西游记的通知信息</a></dd>
+						<dd><a href="#" class="article_href">关于西游记的通知信息</a></dd>
+						<dd><a href="#" class="article_href">关于西游记的通知信息</a></dd>
+						<dd><a href="#" class="article_href">关于西游记的通知信息</a></dd>
+					</dl>
+
+					<dl class="article_list index_r_article">
+						<dt><span>意见建议</span></dt>
+						<dd><a href="#" class="article_href">关于西游记的通知信息坎坎坷</a></dd>
+						<dd><a href="#" class="article_href">关于西游记的通知信息</a></dd>
+						<dd><a href="#" class="article_href">关于西游记的通知信息</a></dd>
+						<dd><a href="#" class="article_href">关于西游记的通知信息</a></dd>
+						<dd><a href="#" class="article_href">关于西游记的通知信息</a></dd>
+						<dd><a href="#" class="article_href">关于西游记的通知信息</a></dd>
+						<dd><a href="#" class="article_href">关于西游记的通知信息</a></dd>
+					</dl>
+
+					<dl class="article_list index_r_article">
+						<dt><span>交流互动</span></dt>
+						<dd><a href="#" class="article_href">关于西游记的通知信息坎坎坷</a></dd>
+						<dd><a href="#" class="article_href">关于西游记的通知信息</a></dd>
+						<dd><a href="#" class="article_href">关于西游记的通知信息</a></dd>
+						<dd><a href="#" class="article_href">关于西游记的通知信息</a></dd>
+						<dd><a href="#" class="article_href">关于西游记的通知信息</a></dd>
+						<dd><a href="#" class="article_href">关于西游记的通知信息</a></dd>
+						<dd><a href="#" class="article_href">关于西游记的通知信息</a></dd>
+					</dl>
+					<dl class="article_list index_r_article">
+						<dt><span>通知信息</span></dt>
+						<dd><a href="#" class="article_href">关于西游记的通知信息坎坎坷</a></dd>
+						<dd><a href="#" class="article_href">关于西游记的通知信息</a></dd>
+						<dd><a href="#" class="article_href">关于西游记的通知信息</a></dd>
+						<dd><a href="#" class="article_href">关于西游记的通知信息</a></dd>
+						<dd><a href="#" class="article_href">关于西游记的通知信息</a></dd>
+						<dd><a href="#" class="article_href">关于西游记的通知信息</a></dd>
+						<dd><a href="#" class="article_href">关于西游记的通知信息</a></dd>
+					</dl>
+				</div>
+			</div>
+			<div id="bottom">
+				CopyRight&copy; 2012-2013
+			</div>
+		</div>
+	</body>
+</html>

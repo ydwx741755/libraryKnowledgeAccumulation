@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>css_menu</title>
+	<meta name="author" content="Administrator" />
+	<!-- Date: 2012-12-09 -->
+	<style type="text/css">
+		*{
+			padding: 0px;
+			margin: 0px;
+			font-size:12px;
+		}
+		#c_header,#c_nav,#c_content,#c_bottom {
+			position: absolute;
+			width:1000px;
+			left:50%;
+			margin-left:-500px;
+			border:1px solid #00f;
+		}
+		#header,#bottom {
+			height:70px;
+			background: #811;
+			color:#fff;
+		}
+		#nav {
+			height:30px;
+			background: #981;
+			color:#fff;
+		}
+		#content {
+			background: #eee;
+			height:600px;
+		}
+		#gzwm {
+			height:40px;
+			filter:alpha(opacity=80);       /* IE */
+			-moz-opacity:0.8;              /* Moz + FF */
+			opacity: 0.8; 
+			background: #000;
+			width: 100%;
+			position: fixed;
+			color:#f00;
+			z-index: 9999;
+			bottom:0px;
+		}
+	</style>
+</head>
+<body>
+	<div id="gzwm">
+		关注我们
+		
+	</div>
+	<div id="header">
+		<div id="c_header">顶部图片</div>		
+	</div>
+	<div id="nav">
+		<div id="c_nav">导航内容</div>
+	</div>
+	<div id="content">
+		<div id="c_content">内容信息</div>		
+	</div>
+	<div id="bottom">
+		<div id="c_bottom">底部信息</div>
+	</div>
+</body>
+</html>
+

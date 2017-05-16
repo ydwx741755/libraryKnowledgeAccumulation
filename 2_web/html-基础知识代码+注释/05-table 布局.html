@@ -1,0 +1,77 @@
+<html>
+	<head>
+		<title>表格标签</title>
+	</head>
+	<body>
+	<!--
+	简单的表格一般是由三大部分组成:table，tr，td，还有两个专门用来控制样式的thead和tbody  现在主流使用 div布局， 不在使用用table布局
+	-->
+	<table width="900" align="center" border="1">
+		<tr>
+			<td>A1</td><td>A2</td><td>A3</td>
+		</tr>
+		<tr>
+			<td>B1</td><td>B2</td><td>B3</td>
+		</tr>
+		<tr>
+			<td>C1</td><td>C3</td><td>C3</td>
+		</tr>
+	</table>
+<br/>
+	<table width="900" align="center" border="1">
+		<tr>
+			<td>A1</td><td>A2</td><td>A3</td><td>A4</td>
+		</tr>
+		<tr>
+			<td>B1</td><td>B2</td><td>B3</td><td>B4</td>
+		</tr>
+		<tr>
+			<!--colspan表示合并单元格,当colspan=2表示合并2格-->
+			<td colspan="2">C1</td>
+			<td colspan="2">C2</td>
+		</tr>
+	</table>
+<br/>
+	<table width="900" align="center" border="1">
+		<tr>
+			<td>标识</td><td>姓名</td><td>年龄</td><td>操作</td>
+		</tr>
+		<tr>
+			<td>1</td><td>张三</td><td>22</td><td>操作</td>
+		</tr>
+		<tr>
+			<td>1</td><td>张三</td><td>22</td><td>操作</td>
+		</tr>
+		<tr>
+			<td>1</td><td>张三</td><td>22</td><td>操作</td>
+		</tr>
+		<tr>
+			<td>1</td><td>张三</td><td>22</td><td>操作</td>
+		</tr>
+		<tr>
+			<td colspan="4" align="right">分页信息</td>
+		</tr>
+	</table>
+
+	<br/>
+	<table width="900" align="center" border="1">
+		<tr>
+			<td>A1</td><td>A2</td><td>A3</td>
+		</tr>
+		<tr>
+			<td>B1</td><td>B2</td><td>B3</td>
+		</tr>
+		<tr>
+			<!--colspan表示合并单元格,当colspan=2表示合并2格-->
+			<td colspan="3">
+				<table width="900" align="center" border="1">
+					<tr>
+						<td>C1</td>
+						<td>C2</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	</body>
+</html>

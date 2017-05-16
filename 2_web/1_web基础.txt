@@ -1,0 +1,48 @@
+/***Css篇： 页面效果：美化****/   需要留意：属性实现了什么效果；程序员能控制什么?——哪些事情是浏览器 或者框架已经做了  
+1、css样式与html 分离，css控制html 元素的样式：属性，颜色 ，大小、位置；
+
+2、CSS规则解析 ：target标签；标签选择器；Selector { property :value ;}  Declaration block,
+		value 可以用关键字，也可以使用具体的值；
+
+3、box Model:  content  padding  border  margin;  div  进行页面的布局；  margin 手指方向重合
+     margin :0px; 四个边距设置为一样的值。  
+    padding ：填充空间；内容与边框之间的距离；
+
+4、边框风格：border-style：
+
+5、背景图片：background-image: url(" ");  重复方式：repeat  none   默认重复  repeat-x 
+   路径：相对路径：
+   绝对路径：
+
+6、css 属性：background-attachment ：背景图片是否滑动；fix  absolute  ;float  ;scroll
+
+7、background-position ：关键字：top   center  bottom ;数值：   百分比
+
+8、字体属性：font-family：样子，可以设置多个字体。
+
+9、字体风格： font-style: 斜体
+
+10、font-weight：字体粗细；normal  bold 出题 bolder    lighter  ;数值
+
+11、font-size ：absolute：pt   px   medium ;   relative   ：smaller   normal   larger   50% ;风格与大小
+
+12、line-height ：行间距  pt   px   em  ;单位，
+
+13、font-variant:字体大小写，转换；
+
+14、文本缩进：  text-indent:  单位   数值    百分比；  负值，作用的范围
+
+15、文本对齐： text-align:   center 
+
+16、文本效果：  text-decoration ：下划线，删除线。
+
+17、文本变形：大小写转换：  text-transform: 首字母大写；capital   upcase 
+
+18、超链接 属性 ： 状态：：:link { }   :visited{}   伪属性   active{ }  鼠标悬停效果； hover  
+
+19、文档使用：css对样式的改变。   
+
+20、有些标签只针对文本有效，<a >  <span>   with 无效，需要使用  display：block 才有用
+
+/******JS篇：实现前台页面简单交互，逻辑控制********/
+1、jQuery ：怎么使用，能实现什么功能+效果；（动手实践）；

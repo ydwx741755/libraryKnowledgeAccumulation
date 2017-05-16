@@ -1,0 +1,64 @@
+<html>
+	<head>
+		<title>外部链接CSS文件</title>
+		<style type="text/css">
+			*{
+				padding:0px;
+				margin:0px;
+			}
+			ul.topic_show {
+				list-style:none;
+				width:249px;
+				border:1px solid #999;
+			}
+			ul.topic_show h3 {
+				height:30px;
+				background:#111155;
+				color:#fff;
+				font-size:14px;
+				
+			}
+			ul.topic_show h3 span {
+				position:relative;
+				left:10px;
+				top:8px;
+			}
+			ul.topic_show li {
+				/*padding:9px 0px;*/
+				height:25px;
+				font-size:12px;
+				color:#555;
+				/*背景会默认完成填充*/
+				background:url("point.jpg") no-repeat;
+				/*背景的第一个值设置的是左右，第二个才是上下*/
+				background-position:10px 8px;
+			}
+			ul.topic_show li span {
+				position:relative;
+				top:5px;
+				left:20px;
+			}
+		</style>
+	</head>
+	<body>
+	<div style="margin:50px;">
+		<ul class="topic_show">
+			<h3><span>通知公告</span></h3>
+			<li><span>关于xxxxxxxxxx的通知</span></li>
+			<li><span>关于xxxxxxxxxx的通知</span></li>
+			<li><span>关于xxxxxxxxxx的通知</span></li>
+			<li><span>关于xxxxxxxxxx的通知</span></li>
+			<li><span>关于xxxxxxxxxx的通知</span></li>
+		</ul>
+
+		<ul class="topic_show">
+			<h3><span>质量监督</span></h3>
+			<li><span>关于xxxxxxxxxx的通知</span></li>
+			<li><span>关于xxxxxxxxxx的通知</span></li>
+			<li><span>关于xxxxxxxxxx的通知</span></li>
+			<li><span>关于xxxxxxxxxx的通知</span></li>
+			<li><span>关于xxxxxxxxxx的通知</span></li>
+		</ul>
+	</div>
+	</body>
+</html>

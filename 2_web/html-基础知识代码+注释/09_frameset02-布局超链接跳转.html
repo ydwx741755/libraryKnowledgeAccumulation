@@ -1,0 +1,14 @@
+<html>
+	<head>
+		<title>框架标签</title>
+	</head>
+	<frameset rows="90,*,90" border="1">
+		<frame src="07.html" name="top"></frame>
+		<frameset cols="110,*">
+			<frame src="03.html"></frame>
+			<!--在连接的时候增加属性target="content"，这个链接就会在content这个frame中显示-->
+			<frame src="06.html" name="content"></frame>
+		</frameset>
+		<frame src="02.html" name="bottom"></frame>
+	</frameset>
+</html>

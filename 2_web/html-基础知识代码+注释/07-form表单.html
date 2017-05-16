@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>表单</title>
+	</head>
+	<body>
+		<form action="01.html">
+		<!--text表示文本输入框，password表示密码输入框-->
+			用户名:<input type="text"/><br/>
+			密码:<input type="password"/><br/>
+			<!--radio是单选框，通过name来分组，当name一样时表示这几个raido都在一个组中
+			此时如果点击其中一个会取消其他的选择-->
+			性别:<input type="radio" value="男" name="sex"/>男
+				<input type="radio" value="女" name="sex"/>女<br/>
+			<!--checkbox是多选框-->
+			兴趣:<input type="checkbox"/>足球<input type="checkbox"/>蓝球
+				<input type="checkbox"/>羽毛球<br/>
+			<!--下拉列表框-->
+			籍贯:<select>
+				<option>北京</option>
+				<option>上海</option>
+				<option>昭通</option>
+			</select><br/>
+			<!--多行文本框，cols表示有多框，rows表示有多高-->
+			个人简介:<textarea cols="50" rows="10"></textarea><br/>
+			<!--submit表示表单提交按钮，当提交的时候会链接到form的action中-->
+			<input type="submit" value="用户注册"/>
+			<!--button表示按钮，如果没有进行任何控制，点击什么都不会做-->
+			<input type="button" value="点一下试试"/>
+		</form>
+	</body>
+</html>

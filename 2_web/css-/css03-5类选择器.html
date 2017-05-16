@@ -1,0 +1,75 @@
+<html>
+	<head>
+		<title>外部链接CSS文件</title>
+		<style type="text/css">
+		/*标签选择器，页面中的所有p标签都会使用该样式*/
+		p{
+			color:#f00;
+		}
+		/*ID选择器，此时会对所有的id为p2的标签进行   id="p2"      p.#p2
+		样式的设置*/
+		p.#p2 {
+			font-weight:bold;
+			text-decoration:underline;
+		}
+		/*p.p1表示class为p1的p标签，类选择器       class = "p1"  p.p1   选择    	 */
+		p.p1 {
+			color:#54a;
+			font-size:16px;
+		}
+
+		p.p2 {
+			color:#998733;
+		}
+		/*包含选择符，指的是p标签中的所有span标签都来设置这个信息 p  span        <p> <span> 选择到的元素</span> </p>        */
+		p span{
+			background:#000;
+			font-weight:bold;
+		}
+		/*包含选择符会包含div标签中的所有span包括是子标签中的span*/
+		div span {
+			background:#0ff;
+		}
+
+		/*子对象选择符*/
+		div > h2 {
+			color:#00f;
+			background:#ff0;
+		}
+		/*子对象选择符，仅仅只针对div标签的第一级子对象*/
+		div>span {
+			background:#f0f;
+		}
+		/*分组选择符,以下表示所有的id为d1或者p2的标签都使用
+		该样式*/
+		#d1,#p2 {
+			font-size:19px;
+			background:#999;
+		}
+		</style>
+	</head>
+	<body>
+		<div id="d1">
+		Apache Whisker <h5>allows an application to models the licensing characteristics of the contents of its distributions. <span>Use cases are auditing the model</span> against</h5> the contents of a distribution, reporting on the <h2>contents of a distribution</h2> and generation licensing documents <span>(LICENSE, NOTICE and so on)</span> for a distribution. Whisker distributes tooling for the command line and build system such as Maven.
+		
+		</div>
+		<p class="p1">
+		    Apache Whisker allows an application to models the licensing characteristics of the contents of its distributions. <span>Use cases are auditing the model</span> against the contents of a distribution, reporting on the contents of a distribution and generation licensing documents (LICENSE, NOTICE and so on) for a distribution. Whisker distributes tooling for the command line and build system such as Maven.
+		</p>
+		<p id="p2">
+		NSF-seeded Open Source software <span>framework used for executing and managing</span> small to large-scale applications and workflows across local resources, computational grids, and the Cloud.
+		</p>
+		
+		<p class="p2">
+		The Apache POI team is pleased to announce the release of POI 3.9. Featured are significant performance improvements and numerous bug fixes.
+		The Apache POI Project's mission is to create and maintain Java APIs for manipulating various file formats based upon the Office Open XML standards (OOXML) and Microsoft's...
+		</p>
+
+		<p class="p2">
+		MyFaces Core is a JavaServer(tm) Faces 2.1 implementation as specified by JSR-314. MyFaces Core has passed Sun's JSR-314 TCK and is 100% compliant with the JSR-314 specification.
+		</p>
+		<p class="p1">
+		MyFaces Core is a JavaServer(tm) Faces 2.0 implementation as specified by JSR-314. MyFaces Core has passed Sun's JSR-314 TCK and is 100% compliant with the JSR-314 specification.
+		</p>
+	</body>
+</html>

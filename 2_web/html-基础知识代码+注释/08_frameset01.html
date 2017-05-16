@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<title>框架标签</title>
+	</head>
+	<!--cols表示让这个框架基于横向的方式切分，
+	(150,*,150)第一个150表示第一个框架的大小是150
+	*表示剩余的部分都是中间的框架
+	第二个150表示右边的框架是150
+	rows表示基于上中下来布局
+		-->
+	<!--如果设置了rows和cols之后会进行平均拆分，此时会拆分为三行，每行2列-->
+	<frameset rows="80,*,80" cols="120,*" frameborder="1" border="1">
+	<!--在rows或者cols中分成几部分，这里就需要多少个frame
+		150,*,150分成的三部分，所以需要三个个frame
+	-->
+		<frame src="01.html" noresize/>
+		<frame src="07.html"/>
+		<frame src="02.html" noresize/>
+	</frameset>
+</html>

@@ -1,0 +1,77 @@
+<html>
+	<head>
+		<title>盒子模型测试</title>
+		<style type="text/css">
+		/*
+		   *号表示所有的标签
+		*/
+		* {
+			padding:0px;
+			margin:0px;
+		}
+		#parent {
+			border:1px solid red;
+			width:500px;
+			height:300px;
+			/*padding-left:70px;*/
+			/*margin:80px;*/
+			/*position:rela;
+			left:80px;*/
+					
+		}
+		#c1 {
+			border:1px solid green;
+			width:150px;
+			height:150px;
+			position:absolute;
+			top:20px;
+		}
+		#child {
+			border:1px solid blue;
+			width:150px;
+			height:150px;
+			/*absolute绝对定位是针对上一级的父元素中position为absolute的来进行定位的
+			  relatvie是针对父类元素而言*/
+			position:absolute;
+			left:10px;
+			top:10px;
+		}
+		#c2{
+			border:1px solid green;
+			width:150px;
+			height:150px;
+		}
+
+		#rock_star {
+			padding:30px;
+			list-style:none;
+		}
+		#rock_star li {
+			border:1px solid red;
+			width:130px;
+			height:40px;
+			text-align:center;
+		}
+		#rock_star li span {
+			position:relative;
+			top:13px;
+		}
+		</style>
+	</head>
+	<body>
+		<div id="parent">
+			<div id="c1">ddd</div>
+			<div id="child">hello box model</div>
+			<div id="c2">cc2</div>
+		</div>
+
+		<ul id="rock_star">
+			<li><span>窦唯</span></li>
+			<li><span>张楚</span></li>
+			<li><span>何勇</span></li>
+			<li><span>周云蓬</span></li>
+		</ul>
+
+
+	</body>
+</html>
